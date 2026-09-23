@@ -23,7 +23,7 @@ which configs etc
 
 ### Download BOLD formatted databases from Zenodo
 ```
-url
+10.5281/zenodo.22919861
 ```
 
 ### Run raxtax
