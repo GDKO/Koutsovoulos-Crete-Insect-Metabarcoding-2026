@@ -21,11 +21,9 @@ fasterq-dump --split-files --outdir data/raw/fastq/ PRJEB114132
 which configs etc
 ```
 
-### Download and format BOLD database
+### Download BOLD formatted databases from Zenodo
 ```
-dl bold
-trim bold
-format bold
+url
 ```
 
 ### Run raxtax
