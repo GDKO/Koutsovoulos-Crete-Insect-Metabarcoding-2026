@@ -16,8 +16,8 @@
 - `ESVs.lib.stats_DatasetB.tsv`
 
 ## Raw RaxTax results
-- `raxtax_raw_DatasetA.tsv`
-- `raxtax_raw_DatasetB.tsv`
+- `raxtax_raw_DatasetA.tsv.zip`
+- `raxtax_raw_DatasetB.tsv.zip`
 
 ## List of species present in the samples
 - `Species_present_in_the_samples.xlsx`
