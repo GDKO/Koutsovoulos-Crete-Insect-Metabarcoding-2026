@@ -5,15 +5,13 @@
 ### Download Raw Sequencing Data (FASTQ)
 
 Before running the analysis, you must download the raw sequencing files associated with BioProject **PRJEB114132**.
+
 ```
-# Create the raw data directory if it doesn't exist
-mkdir -p data/raw/fastq
+# Clone the ENA Browser Tools repository, scripts are inside the python3 folder
+git clone https://github.com/enasequence/enaBrowserTools.git
 
-# Fetch the list of Run accessions for PRJEB114132 and download them
-prefetch PRJEB114132
-
-# Convert the SRA files to paired-end FASTQ format
-fasterq-dump --split-files --outdir data/raw/fastq/ PRJEB114132
+# Get the sequencing data
+enaGroupGet -f fastq -d ./crete_listaros PRJEB114132
 ```
 
 ### Run R2V2 for the two datasets separately
