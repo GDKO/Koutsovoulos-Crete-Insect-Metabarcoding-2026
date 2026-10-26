@@ -1,0 +1,28 @@
+---
+num_threads: 8
+
+# Algorithm options
+
+## prepare
+min_ovlp: 10  # minimum overlap of pairs for merging
+cutadapt_error_rate: 0.15  # cutadapt error rate
+### primer pair
+fprimer: 'GGDACWGGWTGAACWGTWTAYCCHCC'  # forward primer
+rprimer: 'TGRTTYTTYGGNCAYCCNGARGTNTA'  # reverse primer 
+min_len: 282  # minimum length to keep
+max_len: 344  # maximum length to keep
+
+## dereplicate
+maxee: 1  # maximum allowed expected error
+min_un_size: 4  # minimum unique cluster size
+min_num_libs: 1  # minimum number of libraries
+### Hmmer for protein-coding genes
+orf: true  # will run orf filtering
+hmm_file: '/Users/gkoutsovoulos/software/bold_hmm/bold.hmm'  # the hmm location
+len_ratio: 0.9  # minimum length ratio
+
+## cluster
+cl_mode: 'vsearch_denoise'  # clustering mode can be either swarm or vsearch_otu or vsearch_denoise
+pid: 97  # percentage identity when using vsearch clustering
+alpha: 2  # alpha parameter for denoising
+min_den_size: 8  # minimum size for denoising
